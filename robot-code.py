@@ -39,12 +39,12 @@ kitten.turn(90)
 # return to left base
 wait(3500)
 
-front_cat.run_target(motor_speed, 64.8)
+front_cat.run_target(motor_speed, 58)
 
 # Lift The Pin
 kitten.straight(610)
-kitten.turn(-8.5)
-kitten.straight(85)
+kitten.turn(-8.40)
+kitten.straight(105)
 front_cat.run_target(motor_speed, 180)
 kitten.straight(-280)
 kitten.turn(80)
