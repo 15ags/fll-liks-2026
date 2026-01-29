@@ -18,31 +18,34 @@ kitten.settings(550, 550, 750, 750)
 hub.imu.reset_heading(0)
 kitten.reset()
 # first path start
-kitten.straight(12)
+kitten.straight(14)
 kitten.turn(90)
-kitten.straight(238)
+kitten.straight(236)
 kitten.turn(8)
 kitten.straight(-100)
 
-front_cat.run_target(200, 0)
-back_cat.run_target(200, 0)
-front_cat.run_target(200, 200)
+# Push barrier
+front_cat.run_angle(999, 200)
+kitten.turn(-100)
+kitten.straight(123)
 kitten.turn(-90)
-back_cat.run_target(200, -300)
+back_cat.run_angle(999, -300)
 kitten.straight(-490)
 kitten.straight(530)
-back_cat.run_target(200, 0)
+back_cat.run_angle(999, 300)
 kitten.turn(90)
-# wait for second path
+
+# return to left base
 wait(3500)
 
-front_cat.run_target(999, 0)
-front_cat.run_target(200, 78)
+front_cat.run_angle(999, 200)
+front_cat.run_angle(999, -121.58)
 
+# Lift The Pin
 kitten.straight(610)
-kitten.turn(-12)
+kitten.turn(-11.9999999999999999999)
 kitten.straight(85)
-front_cat.run_target(200, 208)
+front_cat.run_angle(999, 130)
 kitten.straight(-280)
 kitten.turn(80)
-front_cat.run_target(200, 18)
+front_cat.run_angle(999, -190.6)
