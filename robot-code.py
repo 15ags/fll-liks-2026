@@ -14,13 +14,13 @@ kitten = DriveBase(cat_motor, kitten_motor, 56, 120)
 kitten.use_gyro(True)
 # pid constants, WHY ARE THEY SO BIG?
 kitten.heading_control.pid(kp=1500, ki=1000, kd=50)
-kitten.settings(550, 550, 750, 750)
+kitten.settings(650, 550, 750, 750)
 hub.imu.reset_heading(0)
 kitten.reset()
 # first path start
 kitten.straight(16)
 kitten.turn(90)
-kitten.straight(236)
+kitten.straight(220)
 kitten.turn(8)
 kitten.straight(-100)
 
