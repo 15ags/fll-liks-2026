@@ -16,7 +16,7 @@ kitten.heading_control.pid(kp=1500, ki=1000, kd=50)
 kitten.settings(350, 350, 750, 750)
 hub.imu.reset_heading(0)
 kitten.reset()
-
+# first path start
 kitten.straight(12)
 kitten.turn(90)
 kitten.straight(238)
