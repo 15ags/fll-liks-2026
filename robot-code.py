@@ -19,7 +19,7 @@ kitten.settings(750, 650, 750, 750)
 hub.imu.reset_heading(0)
 kitten.reset()
 # first path start
-kitten.straight(16)
+kitten.straight(14)
 kitten.turn(90)
 kitten.straight(219)
 kitten.turn(8)
@@ -39,7 +39,7 @@ kitten.turn(90)
 # return to left base
 wait(3500)
 
-front_cat.run_target(motor_speed, 60)
+front_cat.run_target(motor_speed, 67)
 
 # Lift The Pin
 kitten.straight(610)
