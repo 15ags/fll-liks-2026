@@ -38,7 +38,7 @@ kitten.turn(90)
 # return to left base
 wait(3500)
 
-front_cat.run_angle(999, -121.58)
+front_cat.run_angle(999, -122)
 
 # Lift The Pin
 kitten.straight(610)
