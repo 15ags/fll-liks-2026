@@ -17,7 +17,7 @@ kitten.settings(350, 350, 750, 750)
 hub.imu.reset_heading(0)
 kitten.reset()
 
-kitten.straight(12)  # pyright: ignore[reportUnusedCallResult]
+kitten.straight(12)
 kitten.turn(90)
 kitten.straight(238)
 kitten.turn(8)
@@ -32,7 +32,7 @@ kitten.straight(-490)
 kitten.straight(530)
 back_cat.run_target(100, 0)
 kitten.turn(90)
-
+# wait for second path
 wait(3500)
 
 front_cat.run_target(999, 0)
