@@ -5,7 +5,7 @@ from pybricks.robotics import DriveBase
 from pybricks.tools import wait
 
 hub = PrimeHub()
-# prueba commit 6
+# prueba commit 7
 cat_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)
 kitten_motor = Motor(Port.B, Direction.CLOCKWISE)
 front_cat = Motor(Port.F, Direction.COUNTERCLOCKWISE)
