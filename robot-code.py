@@ -26,7 +26,7 @@ kitten.turn(8)
 kitten.straight(-100)
 
 # Push barrier
-front_cat.run_target(motor_speed, 200)
+front_cat.run_target(motor_speed, 150)
 kitten.turn(-100)
 kitten.straight(123)
 kitten.turn(-90)
@@ -39,14 +39,13 @@ kitten.turn(90)
 # return to left base
 wait(3500)
 
-front_cat.run_target(motor_speed, 200)
-front_cat.run_target(motor_speed, 78.42)
+front_cat.run_target(motor_speed, 60)
 
 # Lift The Pin
 kitten.straight(610)
 kitten.turn(-10)
-kitten.straight(85)
-front_cat.run_target(motor_speed, 208.42)
+kitten.straight(75)
+front_cat.run_target(motor_speed, 180)
 kitten.straight(-280)
 kitten.turn(80)
-front_cat.run_target(motor_speed, 17.82)
+front_cat.run_target(motor_speed, 18)
