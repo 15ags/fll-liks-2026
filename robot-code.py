@@ -5,6 +5,7 @@ from pybricks.robotics import DriveBase
 from pybricks.tools import wait
 
 hub = PrimeHub()
+motor_speed = 300
 # drive base
 cat_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)
 kitten_motor = Motor(Port.B, Direction.CLOCKWISE)
@@ -25,27 +26,27 @@ kitten.turn(8)
 kitten.straight(-100)
 
 # Push barrier
-front_cat.run_angle(999, 200)
+front_cat.run_target(motor_speed, 200)
 kitten.turn(-100)
 kitten.straight(123)
 kitten.turn(-90)
-back_cat.run_angle(999, -300)
+back_cat.run_target(motor_speed, -300)
 kitten.straight(-490)
 kitten.straight(530)
-back_cat.run_angle(999, 300)
+back_cat.run_target(motor_speed, 0)
 kitten.turn(90)
 
 # return to left base
 wait(3500)
 
-front_cat.run_angle(999, 200)
-front_cat.run_angle(999, -121.58)
+front_cat.run_target(motor_speed, 200)
+front_cat.run_target(motor_speed, 78.42)
 
 # Lift The Pin
 kitten.straight(610)
 kitten.turn(-11.9999999999999999999)
 kitten.straight(85)
-front_cat.run_angle(999, 130)
+front_cat.run_target(motor_speed, 208.42)
 kitten.straight(-280)
 kitten.turn(80)
-front_cat.run_angle(999, -190.6)
+front_cat.run_target(motor_speed, 17.82)
