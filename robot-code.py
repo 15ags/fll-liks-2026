@@ -18,7 +18,7 @@ kitten.settings(550, 550, 750, 750)
 hub.imu.reset_heading(0)
 kitten.reset()
 # first path start
-kitten.straight(14)
+kitten.straight(16)
 kitten.turn(90)
 kitten.straight(236)
 kitten.turn(8)
