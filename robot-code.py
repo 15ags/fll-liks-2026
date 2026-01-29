@@ -42,7 +42,7 @@ front_cat.run_angle(999, -121.58)
 
 # Lift The Pin
 kitten.straight(610)
-kitten.turn(-7)
+kitten.turn(-10)
 kitten.straight(85)
 front_cat.run_angle(999, 130)
 kitten.straight(-280)
