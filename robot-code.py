@@ -14,39 +14,46 @@ back_cat = Motor(Port.E, Direction.CLOCKWISE)
 kitten = DriveBase(cat_motor, kitten_motor, 56, 120)
 kitten.use_gyro(True)
 # pid constants, WHY ARE THEY SO BIG?
-kitten.heading_control.pid(kp=19000, ki=10000, kd=0)
-kitten.settings(650, 650, 750, 750)
+kitten.heading_control.pid(kp=6000, ki=1000, kd=100)
+kitten.settings(250, 250, 750, 750)
 hub.imu.reset_heading(0)
 kitten.reset()
+front_cat.run_target(200, 0)
+back_cat.run_target(200, 0)
+
+
 # first path start
-kitten.straight(10000)
 kitten.straight(14)
 kitten.turn(90)
-kitten.straight(219)
+kitten.straight(223)
 kitten.turn(8)
-kitten.straight(-100)
+kitten.straight(-85)
 
 # Push barrier
-front_cat.run_target(motor_speed, 150)
+front_cat.run_target(motor_speed, 120)
 kitten.turn(-100)
-kitten.straight(123)
+kitten.straight(100)
 kitten.turn(-90)
 back_cat.run_target(motor_speed, -300)
+kitten.settings(650, 650, 750, 750)
 kitten.straight(-490)
+kitten.settings(250, 250, 750, 750)
+# return to left base
 kitten.straight(530)
 back_cat.run_target(motor_speed, 0)
-kitten.turn(90)
 
-# return to left base
+
+# path 2 setup
+kitten.stop()
 wait(3500)
+hub.imu.reset_heading(0)
+front_cat.run_target(motor_speed, 70)
 
-front_cat.run_target(motor_speed, 58)
-
-# Lift The Pin
+# path 2
 kitten.straight(610)
-kitten.turn(-8.4)
+kitten.turn(-15)
 kitten.straight(105)
 front_cat.run_target(motor_speed, 180)
 kitten.straight(-280)
 kitten.turn(80)
-front_cat.run_target(motor_speed, 18)
+front_cat.run_target(motor_speed, 0)
