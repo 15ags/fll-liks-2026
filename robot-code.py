@@ -144,4 +144,4 @@ hub.imu.reset_heading(0)
 # path 6
 front_cat.run_target(motor_speed, 0)
 back_cat.run_target(motor_speed, 0)
-kitten.straight(500)
+kitten.straight(600)
