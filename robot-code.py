@@ -23,8 +23,7 @@ back_cat.run_target(200, 0)
 wait(500)
 
 # path1 start
-"""
-kitten.straight(600)
+"""kitten.straight(600)
 front_cat.run_target(motor_speed, 70)
 kitten.settings(650, 650, 500, 750)
 kitten.turn(-150)
@@ -134,8 +133,8 @@ kitten.turn(180)
 front_cat.run_target(motor_speed, 200)
 kitten.straight(280)
 kitten.turn(90)
-kitten.straight(590)
-"""
+kitten.straight(590)"""
+
 # path 6 setup
 kitten.stop()
 # wait(3000)
@@ -144,5 +143,9 @@ hub.imu.reset_heading(0)
 # path 6
 front_cat.run_target(motor_speed, 0)
 back_cat.run_target(motor_speed, 0)
-kitten.straight(600)
+kitten.straight(550)
 kitten.turn(0)
+front_cat.run_target(motor_speed, 70)
+kitten.turn(25)
+kitten.straight(30)
+kitten.turn(-45)
