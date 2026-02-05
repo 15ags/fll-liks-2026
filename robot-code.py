@@ -22,7 +22,7 @@ kitten.reset()
 front_cat.run_target(200, 0)
 back_cat.run_target(200, 0)
 wait(500)
-
+"""
 # path1 start
 
 kitten.straight(600)
@@ -166,7 +166,7 @@ kitten.turn(80)
 wait(500)
 kitten.turn(-80)
 kitten.straight(-700)
-
+"""
 # path 8 setup
 kitten.stop()
 wait(3000)
