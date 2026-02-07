@@ -58,12 +58,10 @@ kitten.straight(530)
 front_cat.run_target(motor_speed, 0)
 back_cat.run_target(motor_speed, 0)
 
-
 # path 3 setup
 kitten.stop()
 wait(8000)
 hub.imu.reset_heading(0)
-
 
 # path 3
 front_cat.run_target(motor_speed, 90)
