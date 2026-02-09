@@ -13,8 +13,8 @@ front_cat = Motor(Port.F, Direction.COUNTERCLOCKWISE)
 back_cat = Motor(Port.E, Direction.CLOCKWISE)
 kitten = DriveBase(cat_motor, kitten_motor, 56, 120)
 kitten.use_gyro(True)
-# pid constants
 
+# pid constants
 kitten.heading_control.pid(kp=6500, ki=3000, kd=100)
 kitten.settings(350, 350, 350, 350)
 hub.imu.reset_heading(0)
